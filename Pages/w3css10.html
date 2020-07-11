@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <title>W3CSS Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../CSS/style.css">
+    <link rel ="icon" href ="../images/favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Animation Section Started-->
+   
+   <div class ="w3-margin">
+       <h1 class ="w3-center">W3.CSS Animations</h1>
+       <h3>W3.CSS Animation Classes</h3>
+       <p>W3.CSS provides the following classes for animations:</p>
+       <table class ="w3-table-all">
+         <tr class ="w3-green"><th>Class</th><th>Defines</th></tr>
+         <tr><td>w3-animate-top</td><td>Slides in an element from the top (-300px to 0)</td></tr>
+         <tr><td>w3-animate-bottom</td><td>Slides in an element from the bottom (-300px to 0)</td></tr>
+         <tr><td>w3-animate-left</td><td>Slides in an element from the left (-300px to 0)</td></tr>
+         <tr><td>w3-animate-right</td><td>Slides in an element from the right (-300px to 0)</td></tr>
+         <tr><td>w3-animate-opacity</td><td>Animates an element's opacity from 0 to 1 in 1.5 seconds</td></tr>
+         <tr><td>w3-animate-zoom</td><td>Animates an element from 0 to 100% in size</td></tr>
+         <tr><td>w3-animate-fading</td><td>Animates an element's opacity from 0 to 1 and 1 to 0 (fades in + fade out)</td></tr>
+         <tr><td>w3-spin</td><td>Spins an element 360 degrees</td></tr>
+       </table>
+       <br>
+       <h3>Animate Top</h3>
+       <p>The <strong>w3-animate-top</strong> class slides in an element from the top (from -300px to 0):</p>
+       <div class="w3-container">
+          <h3 class="w3-center w3-animate-top">Animation is Fun!</h3>
+       </div>
+       <button onclick ="document.getElementById('id1').style.display='block'" class="w3-button w3-green">Show</button>
+       <div id ="id1" class ="w3-modal">
+         <div class ="w3-card w3-modal-content">
+           <p><span onclick ="document.getElementById('id1').style.display='none'" class ="w3-button w3-large w3-display-right">&times;</span></p>
+           <div class="w3-container w3-center" style ="display:inline-block">
+             <h3 class="w3-center w3-animate-top">Animation is Fun!</h3>
+           </div>
+         </div>
+       </div>
+       <div class ="w3-panel w3-card w3-pale-yellow"><p>You will not be able to see these animation effets due to scroll down dealy.
+        <br>These animation loads at the time of page loading.
+        </p></div>
+       <br>
+       <h3>Animate Bottom</h3>
+       <p>The <strong>w3-animate-bottom</strong> class slides in an element from the bottom (from -300px to 0):</p>
+       <div class ="w3-container">
+          <h3 class="w3-center w3-animate-bottom">Animation is Fun!</h3>
+       </div>
+       <button onclick ="document.getElementById('id2').style.display='block'" class="w3-button w3-green">Show</button>
+       <div id ="id2" class ="w3-modal">
+       <div class ="w3-card w3-modal-content">
+       <p><span onclick ="document.getElementById('id2').style.display='none'" class ="w3-button w3-large w3-display-right">&times;</span></p>
+       <div class="w3-container w3-center" style ="display:inline-block">
+       <h3 class="w3-center w3-animate-bottom">Animation is Fun!</h3>
+       </div>
+       </div>
+       </div>
+       <br>
+       <h3>Animate Left</h3>
+       <p>The <strong>w3-animate-left</strong> class slides in an element from left (-300px to 0):</p>
+       <div class ="w3-container">
+          <h3 class ="w3-center w3-animation-left">Animation is fun!</h3>
+       </div>
+       <button onclick ="document.getElementById('id3').style.display='block'" class="w3-button w3-green">Show</button>
+       <div id ="id3" class ="w3-modal">
+       <div class ="w3-card w3-modal-content">
+       <p><span onclick ="document.getElementById('id3').style.display='none'" class ="w3-button w3-large w3-display-right">&times;</span></p>
+       <div class="w3-container w3-center" style ="display:inline-block">
+       <h3 class="w3-center w3-animate-left">Animation is Fun!</h3>
+       </div>
+       </div>
+       </div>
+       <h3>Animate Right</h3>
+       <p>The <strong>w3-animate-right</strong> class slides in an element from the right (-300px to 0):</p>
+       <div class ="w3-container">
+          <h3 class ="w3-center w3-animation-right">Animation is fun!</h3>
+       </div>
+       <button onclick ="document.getElementById('id4').style.display='block'" class="w3-button w3-green">Show</button>
+       <div id ="id4" class ="w3-modal">
+       <div class ="w3-card w3-modal-content">
+       <p><span onclick ="document.getElementById('id4').style.display='none'" class ="w3-button w3-large w3-display-right">&times;</span></p>
+       <div class="w3-container w3-center" style ="display:inline-block">
+       <h3 class="w3-center w3-animate-right">Animation is Fun!</h3>
+       </div>
+       </div>
+       </div>
+       <br>
+       <h3>Fade in Elements</h3>
+       <p>The <strong>w3-animate-opacity</strong> class animates an element's opacity from 0 to 1 in 0.8 seconds.</p>
+       <p>Fade in an element with the <strong>w3-animate-opacity</strong> class:</p>
+       <div class ="w3-container w3-border w3-center w3-animate-opacity">
+          <h3 class ="w3-center">Animation is fun!</h3>
+          <p>The w3-animate-opacity class fades in an element (0 to 1 opacity in 0.8 seconds).</p>
+       </div>
+       <button onclick ="document.getElementById('id5').style.display='block'" class="w3-button w3-green">Show</button>
+       <div id ="id5" class ="w3-modal">
+       <div class ="w3-card w3-modal-content">
+       <p><span onclick ="document.getElementById('id5').style.display='none'" class ="w3-button w3-large w3-display-right">&times;</span></p>
+       <div class="w3-container w3-center" style ="display:inline-block">
+       <h3 class="w3-center w3-animate-opacity">Animation is Fun!</h3>
+       </div>
+       </div>
+       </div>
+       <br>
+       <h3>Zoom in Elements</h3>
+       <p>The <strong>w3-animate-zoom</strong> class animates an element from 0 to 100% in size.</p>
+       <p>Zoom in an element with the <strong>w3-animate-zoom</strong> class.</p>
+       <div class="w3-animation-zoom w3-border w3-center w3-container">
+          <h3>Animation is Fun!</h3>
+          <p>The w3-animate-zoom class zooms in an element (from 0% to 100% in size).</p>
+       </div>
+       <button onclick ="document.getElementById('id6').style.display='block'" class="w3-button w3-green">Show</button>
+       <div id ="id6" class ="w3-modal">
+       <div class ="w3-card w3-modal-content">
+       <p><span onclick ="document.getElementById('id6').style.display='none'" class ="w3-button w3-large w3-display-right">&times;</span></p>
+       <div class="w3-container w3-center" style ="display:inline-block">
+       <h3 class="w3-center w3-animate-zoom">Animation is Fun!</h3>
+       </div>
+       </div>
+       </div>
+       <br>
+       <h3>Spin Elements</h3>
+       <p>The <strong>w3-spin</strong> class spins an element 360 degrees:</p>
+       <div class ="w3-center w3-container w3-spin w3-circle w3-blue" style="width:100px;height:100px">
+         <h1>|</h1>
+       </div>
+       <br>
+       <h3>Fading Infinite</h3>
+       <p>The <strong>w3-animate-fading</strong> class fades in and out an element every 10 seconds (continuously):</p>
+       <div class ="w3-black w3-container w3-animate-fading"><h3>Animate Fade In and Out</h3></div>
+       <br>
+   </div>
+   <hr>
+   
+<!--Effects Section Started-->
+   <div class ="w3-margin">
+      <h1 class="w3-center">W3.CSS Effects</h1>
+      <h3>W3.CSS Effect Classes</h3>
+      <p>W3.CSS provides the following effects classes:</p>
+      <table class ="w3-table-all">
+         <tr class ="w3-green"><th>Class</th><th>Defines</th></tr>
+         <tr><td>w3-opacity</td><td>Adds opacity/transparency to an element (opacity: 0.6)</td></tr>
+         <tr><td>w3-opacity-min</td><td>Adds opacity/transparency to an element (opacity: 0.75)</td></tr>
+         <tr><td>w3-opacity-max</td><td>Adds opacity/transparency to an element (opacity: 0.25)</td></tr>
+         <tr><td>w3-grayscale</td><td>Adds a grayscale effect to an element (grayscale: 75%)</td></tr>
+         <tr><td>w3-grayscale-min</td><td>Adds a grayscale effect to an element (grayscale: 75%)</td></tr>
+         <tr><td>w3-grayscale-min</td><td>Adds a grayscale effect to an element (grayscale: 50%)</td></tr>
+         <tr><td>w3-grayscale-max</td><td>Adds a grayscale effect to an element (grayscale: 100%)</td></tr>
+         <tr><td>w3-sepia</td><td>Adds a sepia effect to an element (sepia: 75%)</td></tr>
+         <tr><td>w3-sepia-min</td><td>Adds a sepia effect to an element (sepia: 50%)</td></tr>
+         <tr><td>w3-sepia-max</td><td>Adds a sepia effect to an element (sepia: 100%)</td></tr>
+         <tr><td>w3-hover-opacity</td><td>Adds transparency to an element on hover (opacity: 0.6)</td></tr>
+         <tr><td>w3-hover-grayscale</td><td>Adds a grayscale effect to an element on hover (grayscale: 100%)</td></tr>
+         <tr><td>w3-hover-sepia</td><td>Adds a sepia effect to an element on hover</td></tr>
+      </table>
+      <br>
+      <h3>Opacity</h3>
+      <div class ="w3-panel w3-red">
+         <p>Normal</p>
+      </div>
+      <div class="w3-panel w3-red w3-opacity-min">
+         <p>w3-opacity-min</p>
+      </div>
+      <div class="w3-panel w3-red w3-opacity">
+         <p>w3-opacity</p>
+      </div>
+      <div class="w3-panel w3-red w3-opacity-max">
+         <p>w3-opacity-max</p>
+      </div>
+      <br>
+      <h3>Grayscale</h3>
+      <div class ="w3-panel w3-red">
+        <p>Normal</p>
+      </div>
+      <div class="w3-panel w3-red w3-grayscale-min">
+        <p>w3-grayscale-min</p>
+      </div>
+      <div class="w3-panel w3-red w3-grayscale">
+        <p>w3-grayscale</p>
+      </div>
+      <div class="w3-panel w3-red w3-grayscale-max">
+        <p>w3-grayscale-max</p>
+      </div>
+      <br>
+      <h3>Sepia</h3>
+      <div class ="w3-panel w3-red">
+      <p>Normal</p>
+      </div>
+      <div class="w3-panel w3-red w3-sepia-min">
+      <p>w3-sepia-min</p>
+      </div>
+      <div class="w3-panel w3-red w3-sepia">
+      <p>w3-sepia</p>
+      </div>
+      <div class="w3-panel w3-red w3-sepia-max">
+      <p>w3-sepia-max</p>
+      </div>
+      <br>
+      <h3>Hover Effects</h3>
+      <div class ="w3-panel w3-red w3-hover-opacity">
+      <p>w3-hover-opacity</p>
+      </div>
+      <div class="w3-panel w3-red w3-hover-grayscale">
+      <p>w3-hover-grayscale</p>
+      </div>
+      <div class="w3-panel w3-red w3-hover-sepia">
+      <p>w3-hover-sepia</p>
+      </div>
+      <br>
+      <h3>Hover Opacity Color</h3>
+      <p>You can also combine any <strong>w3-hover-color</strong> classes with <strong>w3-hover-opacity</strong>
+       to create a slightly "lighter" background color on hover:</p>
+       <div class ="w3-panel w3-border w3-hover-red">
+          <p>w3-hover-red</p>
+       </div>
+       <div class="w3-panel w3-border w3-hover-opacity w3-hover-red">
+          <p>w3-hover-red with w3-hover-opacity</p>
+       </div>
+   </div>
+   <br>
+   <hr>
+   
+<!--W3.CSS Bar Section Started-->
+
+   <div class ="w3-margin">
+      <h1 class ="w3-center">W3.CSS Bars</h1>
+      <h3>Horizontal Bars</h3>
+      <p>Horizontal bars are common web design elements:</p>
+      <p>The w3-bar class is used to style an horizontal bar:</p>
+      <div class ="w3-bar w3-green">
+         <div class="w3-bar-item">London</div>
+         <div class="w3-bar-item">Paris</div>
+         <div class="w3-bar-item">Tokyo</div>
+      </div>
+      <p>The purpose of the <strong>w3-bar-item</strong> class is to provide correct spacing, padding, and positioning</p>
+      <h3>Vertical Bars</h3>
+      <p>Vertical bars (sidebars) are also common in web design:</p>
+      <p>The w3-bar-block class is used to style a vertical bar:</p>
+      <div class ="w3-bar-block w3-green" style="width:100px" >
+         <div class="w3-bar-item">London</div>
+         <div class="w3-bar-item">Paris</div>
+         <div class="w3-bar-item">Tokyo</div>
+      </div>
+      <br>
+      <h3>Bar Colors</h3>
+      <p>You can use any color to style a bar:</p>
+      <div class ="w3-bar w3-black">
+        <div class="w3-bar-item">London</div>
+        <div class="w3-bar-item">Paris</div>
+      	<div class="w3-bar-item">Tokyo</div>
+      </div>
+      <div class ="w3-bar w3-red">
+      	<div class="w3-bar-item">London</div>
+      	<div class="w3-bar-item">Paris</div>
+      	<div class="w3-bar-item">Tokyo</div>
+      </div>
+      <div class ="w3-bar w3-teal">
+      	<div class="w3-bar-item">London</div>
+      	<div class="w3-bar-item">Paris</div>
+      	<div class="w3-bar-item">Tokyo</div>
+      </div>
+      <br>
+      <h3>Hover Colors</h3>
+      <p>You can use any hover color to style a bar:
+      <br>
+      Mouse over the bar items to see the effect:</p>
+      <div class ="w3-bar w3-black">
+      	<div class="w3-bar-item w3-hover-red">London</div>
+      	<div class="w3-bar-item w3-hover-green">Paris</div>
+      	<div class="w3-bar-item w3-hover-blue">Tokyo</div>
+      </div>
+      <br>
+      <div class ="w3-bar-block w3-black" style="width:100px" >
+      	<div class="w3-bar-item w3-hover-red">London</div>
+      	<div class="w3-bar-item w3-hover-green">Paris</div>
+      	<div class="w3-bar-item w3-hover-blue ">Tokyo</div>
+      </div>
+      <br>
+      <h3>Bar Links</h3>
+      <p>Providing navigation is a typical use for bars:</p>
+      <div class ="w3-bar w3-black">
+         <a href="#"  class ="w3-btn w3-bar-item w3-hover-green">London</a>
+         <a href="#"  class ="w3-btn w3-bar-item w3-hover-green">Paris</a>
+         <a href="#" class ="w3-btn w3-bar-item w3-hover-green">Tokyo</a>
+      </div>
+      <br>
+      <h3>Bar Buttons</h3>
+      <div class ="w3-bar w3-black">
+      	<a href="#,"  class ="w3-button w3-bar-item w3-hover-green">London</a>
+      	<a href="#,"  class ="w3-button w3-bar-item w3-hover-green">Paris</a>
+      	<a href="#,"  class ="w3-button w3-bar-item w3-hover-green">Tokyo</a>
+      </div>
+      <br>
+      <h3>Responsive Bar</h3>
+      <p>The <strong>w3-mobile</strong> class is perfect for making bar items responsive.</p>
+      <p>Resize the window to see the effect:</p>
+      <div class ="w3-bar w3-black">
+      	<a href="#,"  class ="w3-button w3-bar-item w3-mobile w3-hover-green">London</a>
+      	<a href="#,"  class ="w3-button w3-bar-item w3-mobile w3-hover-green">Paris</a>
+      	<a href="#,"  class ="w3-button w3-bar-item w3-mobile w3-hover-green">Tokyo</a>
+      </div>
+      <br>
+      <h3>Right-Aligned Bar Items</h3>
+      <p>The <strong>w3-right</strong> class is perfect for making bar items right-aligned:</p>
+      <div class ="w3-bar w3-black">
+      	<a href="#,"  class ="w3-button w3-bar-item w3-hover-green">London</a>
+      	<a href="#,"  class ="w3-button w3-bar-item w3-hover-green">Paris</a>
+      	<a href="#,"  class ="w3-button w3-right w3-bar-item w3-hover-green">Tokyo</a>
+      </div>
+      <br><br><br>
+      <div>
+      	<a class = "prev-btn" href="w3css9.html" >&lt; Previous</a>
+      </div>
+      <div>
+      	<a class = "nxt-btn" href="w3css11.html" >Next &gt;</a>
+      </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <title>W3CSS Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../CSS/style.css">
+    <link rel ="icon" href ="../images/favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+   <!-- Card Section Started-->  
+   <div class ="w3-margin">
+     <h1 class = "w3-center">W3.CSS Cards</h1>
+     <div class ="w3-card w3-padding">
+       <p>It is W3.CSS Card</p>
+     </div>
+     <h3>W3.CSS Card Classes</h3>
+     <p>W3.CSS provides the following classes for displaying paper-like cards:</p>
+     <table class ="w3-table w3-border">
+       <tr><th>Class</th><th>Defines</th></tr>
+       <tr><td>w3-card</td><td>Same as w3-card-2</td></tr>
+       <tr><td>w3-card-2</td><td>Container for any HTML content (2px bordered shadow)</td></tr>
+       <tr><td>w3-card-4</td><td>Container for any HTML content (4px bordered shadow)</td></tr>
+     </table>
+     <h3>Colored Cards</h3>
+     <p>To display colored cards, just add <strong>w3-color</strong> class:</p>
+     <div class ="w3-card w3-yellow w3-padding">
+     <p>w3-card</p>
+     </div>
+     <br>
+     <div class ="w3-card w3-white w3-padding">
+     <p>w3-card-2</p>
+     </div>
+     <h3>Card Content</h3>
+     <p>Add containers inside the card to create different sections:</p>
+     <div class = "w3-card-4">
+        <header class ="w3-container w3-blue">
+        <h3>Header</h3>
+        </header>
+        <div class ="w3-container">
+        <p>Some text.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <footer class ="w3-container w3-blue">
+        <h4>Footer</h4>
+        </footer>
+     </div>
+     <h3>Photo Card</h3>
+     <div class ="w3-card-4 w3-margin">
+     <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" style ="width:100%">
+     <p class ="beech w3-padding">The Italian / Austrian Alps</p>
+     </div>
+     <h3>Hover Effect</h3>
+     <p>The <strong>w3-hover-shadow</strong> class adds a shadow effect on hover
+      - this will make any element look like a card on mouse-over
+      (same style as w3-card-4).</p>
+      <div class=" w3-pale-blue w3-hover-shadow">
+      <p style ="padding:25px">Hover over me!</p>
+      </div>
+      <h3>More Examples</h3>
+      <div class ="w3-card-4 w3-blue-gray">
+         <h3 class ="beech w3-padding">Friend Request</h3>
+         <center><img src="https://www.w3schools.com/w3css/img_avatar3.png" style ="width:200px;height:200px" ></center>
+         <p class ="beech w3-large">John Doe</p</div>
+         <center>
+         <button class ="w3-button w3-green w3-margin">Accept</button>
+         <button class ="w3-button w3-red w3-margin">Decline</button>
+         </center>
+      </div>
+      <div class ="w3-card-4">
+        <div class ="w3-sand">
+        <p class ="w3-xlarge w3-padding">John Doe</p>
+        </div>
+        <p class ="w3-margin">1 new friend request</p>
+        <hr>
+        <div class ="w3-container">
+        <img class ="w3-circle w3-left" src="https://www.w3schools.com/w3css/img_avatar3.png" style ="width:60px" >
+        <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p>
+        </div>
+        <button class ="w3-button w3-block w3-dark-gray">+Connect</button>
+      </div>
+   </div>
+   
+   <!--Fonts Section Started-->
+   <hr>
+   <div class ="w3-margin">
+      <h2 class ="beech">W3.CSS Fonts</h2>
+       <h3>Easy to Read</h3>
+       <p>W3.CSS pages are easy to read, even for people with slight reading disabilities.</p>
+       <ul>
+         <li>W3.CSS default font-size is 15px</li>
+         <li>The default font is Verdana, which has a good letter spacing</li>
+         <li>The default line-spacing (1.5) is also very good</li>
+       </ul>
+       <h3>Font-Size Classes</h3>
+       <p>Headings should be used for what they are: Headings.</p>
+       <p>With <strong>W3.CSS</strong>, font sizes can be set by the following w3-size classes:</p>
+       <h3>Example</h3>
+       <div class ="w3-container w3-pale-blue w3-leftbar w3-border-green">
+          <p class ="w3-tiny">w3-tiny</p>
+          <p class ="w3-small">w3-small</p>
+          <p>w3-medium (Default)</p>
+          <p class ="w3-large">w3-large</p>
+          <p class ="w3-xlarge">w3-xlarge</p>
+          <p class ="w3-xxlarge">w3-xxlarge</p>
+          <p class ="w3-xxxlarge">w3-xxxlarge</p>
+          <p class ="w3-jumbo">w3-jumbo</p>
+       </div>
+       <h3>Overriding the W3.CSS Defaults</h3>
+       <p>Overriding the W3.CSS default settings is very easy.</p>
+       <p>You have at least three options:</p>
+       <ol>
+           <li>Override the default settings in the &lt;head&gt; section of your page</li>
+           <li>Add your own CSS file after W3.CSS</li>
+           <li>Download and change the content of the W3.CSS file</li>
+       </ol>
+       <h3>Override in&lt;head&gt;</h3>
+       <pre>
+       <code>
+     h1{font-size:64px;}
+     h2{font-size:48px;}
+     h3{font-size:36px;}
+     h4{font-size:24px;}
+     h5{font-size:20px;}
+     h6{font-size:18px;}
+       </code>
+       </pre>
+       <h3>Add your own CSS</h3>
+       <pre>
+        <code>
+    &lt;link rel="stylesheet" href=
+    "https://www.w3schools.com/
+    w3css/4/w3.css"&gt;
+    &lt;link rel="stylesheet" href=
+    "myStyle.css"&gt;
+        </code>
+       </pre>
+       <h3>W3.CSS External Fonts</h3>
+       <p>With W3.CSS it is extremely easy to add new fonts to a web page.</p>
+       <ul>
+          <li>Very easy to use (only CSS and HTML)</li>
+          <li>Unlimited use of external font libraries (Like Google Fonts)</li>
+          <li>Works in all modern browsers</li>
+       </ul>
+       <h3>Using a Font Class</h3>
+       <p>In the head of your web page (or in your style sheet), create a font class:</p>
+       <pre>
+       <code>
+       .w3-myfont {
+       font-family: "Comic Sans MS",
+        cursive, sans-serif;
+       }
+       </code>
+       </pre> 
+   </div>
+   <hr>
+   
+   <!--Text Section Started-->
+   
+   <div class ="w3-margin">
+       <h1 class ="beech">W3.CSS Text</h1>
+       <h3>Text Alignment</h3>
+       <p>The <strong>w3-left-align</strong> and the <strong>w3-right-align</strong> classes are used to align text.</p>
+       <h3>Example</h3>
+       <div class ="w3-container w3-border">
+       <p class ="w3-left-align">Left aligned text.</p>
+       <p class ="w3-right-align">Right aligned text.</p>
+       </div>
+       <h3>Centering Elements</h3>
+       <div class =" w3-container w3-center">
+       <p>The <strong>w3-center</strong> class is used to center-align elements:</p>
+       <p class ="w3-xlarge">Centered Content</p>
+       <img src="https://www.w3schools.com/w3css/img_car.jpg" style ="width:250px" >
+       <p>The w3-center class centers an element.</p>
+       </div>
+       <h3>Wide Text</h3>
+       <p>The <strong>w3-wide</strong> class specifies a wider text:</p>
+       <p>This text is normal.</p>
+       <p class ="w3-wide">This text is wider.</p>
+       <h3>Text Opacity</h3>
+       <p>The <strong>w3-opacity</strong> class is designed to work with all colors:</p>
+       <div class ="w3-panel w3-pink">
+       <h2 class ="w3-opacity">Text Opacity</h2>
+       </div>
+       <div class ="w3-panel w3-blue">
+       <h2 class ="w3-opacity">Text Opacity</h2>
+       </div>
+       <h3>Text Shadow</h3>
+       <p>The CSS3 text-shadow property can be used to add shadow or blur effects to text:<br>No special class.</p>
+       <div class ="w3-panel w3-green">
+       <h2 style="text-shadow:1px 1px 0 #444">Text Shadow</h2>
+       </div>
+       <h3>Special Effects</h3>
+       <div class ="w3-panel w3-pink">
+       <h2 class ="w3-opacity"><b>Text Opacity + Bold</b></h2>
+       </div>
+   </div>
+   <hr>
+    
+   <!--Rounds Section Started-->
+   <div class = "w3-margin">
+       <h1 class ="w3-center">W3.CSS Round Classes</h1>
+       <p>The <strong>w3-round-size</strong> classes add rounded corners to any HTML element:</p>
+   	   <div class =" w3-container w3-teal w3-round-small">
+   	   <p>w3-round-small</p>
+   	   </div>
+   	   <br>
+   	   <div class =" w3-teal w3-container w3-round">
+   	   <p>w3-round</p>
+   	   </div>
+   	   <br>
+   	   <div class =" w3-teal w3-container w3-round">
+   	   <p>w3-round-large</p>
+   	   </div>
+   	   <br>
+   	   <div class ="w3-teal 
+   	   w3-container w3-round-large">
+   	   <p>w3-round-large</p>
+   	   </div>
+   	   <br>
+   	   <div class =" w3-container w3-teal w3-round-xlarge">
+   	   <p>w3-round-xlarge</p>
+   	   </div>
+   	   <br>
+   	   <div class ="w3-container w3-teal
+   	   w3-round-xxlarge">
+   	   <p>w3-round-xxlarge</p>
+   	   </div>
+   	   <hr>
+   	   <h3>The Circle Class</h3>
+   	   <p>The <strong>w3-circle </strong>class displays content 
+   	   inside a circle.</p>
+   	   <h3>An Image Inside a Circle</h3>
+   	   <img style="width:80%" class ="w3-circle" src="https://www.w3schools.com/w3css/img_car.jpg" >
+       <hr>
+       <h3>Text Inside a Circle</h3>
+       <div class ="w3-center w3-xlarge w3-padding-32 w3-container w3-circle w3-red">
+       <p>Text inside a circle</p>
+       </div>
+       <hr>
+       <h3>A Circle Inside a Circle</h3>
+       <div class ="w3-padding-32 w3-green w3-circle">
+       <img style ="width:70%"class ="w3-circle"src="https://www.w3schools.com/w3css/img_car.jpg">
+       </div>
+       <div class ="w3-padding-32 w3-green w3-circle">
+          <div style ="width:50%"class ="w3-padding-32 w3-red w3-circle">
+          <p class ="w3-xlarge">Hello
+          W3.CSS!</p>
+          </div>
+       </div>
+       <br>
+       <div>
+       <a class = "prev-btn" href="w3css1.html" >&lt; Previous</a>
+       </div>
+       <div>
+       <a class = "nxt-btn" href="w3css3.html" >Next &gt;</a>
+       </div>
+   </div>
+</body>
+</html>

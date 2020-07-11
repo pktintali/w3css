@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+    <title>W3CSS Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../CSS/style.css">
+    <link rel ="icon" href ="../images/favicon.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Dropdown Section Started-->
+  
+   <div class ="w3-margin">
+       <h1 class ="w3-center">W3.CSS Dropdowns</h1>
+       <h3>W3.CSS Dropdown Classes</h3>
+       <p>W3.CSS provides the following dropdown classes:</p>
+       <table class ="w3-table-all">
+          <tr class="w3-green"><th>Class</th><th>Defines</th></tr>
+          <tr><td>w3-dropdown-hover</td><td>A hoverable dropdown element</td></tr>
+          <tr><td>w3-dropdown-content</td><td>The dropdown part to be displayed</td></tr>
+          <tr><td>w3-dropdown-click</td><td>A clickable dropdown element</td></tr>
+       </table>
+       <br>
+       <h3>Dropdown Elements</h3>
+       <p>The <strong>w3-dropdown-hover</strong> class defines a hoverable dropdown element.</p>
+       <p>The <strong>w3-dropdown-content</strong> class defines the dropdown content to be displayed.</p>
+       <div class ="w3-dropdown-hover">
+          <button class ="w3-button w3-black">Hover Over Me</button>
+          <div class ="w3-dropdown-content w3-bar-block w3-bar-black w3-border">
+             <a href="#," class ="w3-bar-item w3-button">Link1</a>
+             <a href="#," class ="w3-bar-item w3-button">Link2</a>
+             <a href="#," class ="w3-bar-item w3-button">Link3</a>
+          </div>
+       </div>
+       <p>Both the hoverable element and the dropdown content element can be any HTML element.</p>
+       <p>In the example above the hover element was a &lt;button&gt;, and the dropdown content a &lt;div&gt;.</p>
+       <p>In the next example the hover element is a &lt;p&gt;, and the dropdown content is a &lt;span&gt;:</p>
+       <p class="w3-dropdown-hover" >Hover Me!<span class="w3-dropdown-content w3-padding w3-green" >Hello W3CSS</span></p>
+       <h3>Menu Dropdowns</h3>
+       <p>The <strong>w3-dropdown-hover</strong> class is perfect for creating navigation bars with dropdown menues</p>
+       <div class ="w3-bar w3-light-grey">
+          <a href="#," class="w3-bar-item w3-button">Home</a>
+          <a href="#," class ="w3-bar-item w3-button">Link1</a>
+          <div class ="w3-dropdown-hover">
+            <button class ="w3-button">Dropdown</button>
+              <div class ="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#," class="w3-bar-item w3-button">Link 1</a>
+                <a href="#," class="w3-bar-item w3-button">Link 2</a>
+                <a href="#," class="w3-bar-item w3-button">Link 3</a>
+              </div>
+          </div>
+       </div>
+       <br>
+       <h3>Image Dropdowns</h3>
+       <p>Move the mouse over the image:</p>
+       <div class ="w3-dropdown-hover" style="width:20%" >
+         <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" alt ="hover image" style="width:100%" >
+         <div class ="w3-dropdown-content" style="width:320px" >
+           <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" style="width:100%">
+         </div>
+       </div>
+       <br>
+       <h3>Card Dropdowns</h3>
+       <p>Move the mouse over one of the cities below:</p>
+       <div class="w3-dropdown-hover w3-border" >
+       London
+         <div class ="w3-dropdown-content w3-card-4">
+           <img src="https://www.w3schools.com/w3css/img_london.jpg" style ="width:100%">
+           <div class ="w3-container">
+             <p>London is the capital city of England.</p>
+           </div>
+         </div>
+       </div>
+       <div class="w3-dropdown-hover w3-border">
+         Tokyo
+           <div class="w3-dropdown-content w3-card-4">
+             <img src="https://www.w3schools.com/w3css/img_tokyo.jpg" style="width:100%"  >
+             <div class ="w3-container">
+               <p>Tokyo is the capital city of Japan.</p>
+               <p>
+             </div>
+           </div>
+       </div>
+       <br>
+       <h3>Animated Dropdown</h3>
+       <p>Use any of the <strong>w3-animate-classes</strong> to fade, zoom or slide in the dropdown content:</p>
+       <div class ="w3-dropdown-hover">
+         Hover on me
+         <div class=" w3-card-4 w3-dropdown-content w3-animate-zoom w3-bar-block " >
+           <a href="#," class="w3-bar-item w3-button">Link 1</a>
+           <a href="#," class="w3-bar-item w3-button">Link 2</a>
+           <a href="#," class="w3-bar-item w3-button">Link 3</a>
+         </div>
+       </div>
+       <br>
+       <h3>Right-aligned Dropdown</h3>
+       <p>Use the <strong>w3-right</strong> class to float the dropdown to the right. Use CSS to position the dropdown content (<strong>right:0</strong> 
+       will make the dropdown menu go from right to left instead of left to right):</p>
+       <div class="w3-dropdown-hover w3-right">
+       <button class="w3-button w3-light-grey">Dropdown</button>
+       <div class="w3-dropdown-content w3-bar-block w3-border" style="right:0">
+       <a href="#," class="w3-bar-item w3-button">Link 1</a>
+       <a href="#," class="w3-bar-item w3-button">Link 2</a>
+       <a href="#," class="w3-bar-item w3-button">Link 3</a>
+       </div>
+       </div>
+       <br>
+   </div>
+   <br>
+   <hr>
+   <div class ="w3-margin">
+     <h1 class ="w3-center">W3.CSS Accordions</h1>
+     <h3>Accordion</h3>
+     <p>An accordion is used to show (and hide) HTML content.</p>
+     <p>Use the <strong>w3-hide</strong> class to hide the accordion content.</p>
+     <p>Use any kind of button to open and close the content:</p>
+   </div>
+</body>
+</html>
